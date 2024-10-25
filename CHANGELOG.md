@@ -1,0 +1,6 @@
+- initial setup
+- feat: coloured campfire blocks
+- feat: village detection
+- feat: village naming
+- feat: villageR naming
+- feat: duzo watermark
