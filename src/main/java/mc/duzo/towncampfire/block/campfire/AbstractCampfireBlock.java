@@ -2,6 +2,7 @@ package mc.duzo.towncampfire.block.campfire;
 
 import mc.duzo.towncampfire.data.ServerData;
 import mc.duzo.towncampfire.data.village.Village;
+import mc.duzo.towncampfire.util.DuzoWatermark;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -37,6 +38,8 @@ public class AbstractCampfireBlock extends CampfireBlock {
 
 	protected void onUse(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, Village found) {
 		if (found == null) return;
+
+		DuzoWatermark.tell();
 
 		pPlayer.sendSystemMessage(Component.literal("Village found!"));
 		pPlayer.sendSystemMessage(Component.literal("Village name: " + found.data().name()));

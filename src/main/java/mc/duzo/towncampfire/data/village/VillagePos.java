@@ -35,7 +35,7 @@ public class VillagePos implements INBTSerializable<CompoundTag> {
 	}
 	public AABB area() {
 		if (area == null) {
-			new AABB(pos()).inflate(Village.RADIUS, level().getHeight(), Village.RADIUS);
+			area = new AABB(pos()).inflate(Village.RADIUS, level().getHeight(), Village.RADIUS);
 		}
 
 		return area;

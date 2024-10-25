@@ -3,6 +3,7 @@ package mc.duzo.towncampfire;
 import com.mojang.logging.LogUtils;
 import mc.duzo.towncampfire.register.Register;
 import mc.duzo.towncampfire.util.AsyncLocatorUtil;
+import mc.duzo.towncampfire.util.DuzoWatermark;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,7 +32,6 @@ import java.util.Random;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TCMod.MODID)
 public class TCMod {
-
     public static final String MODID = "towncampfire";
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final Random RANDOM = new Random();
@@ -42,6 +42,7 @@ public class TCMod {
         bus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
+        DuzoWatermark.init();
         Register.init(bus);
     }
 
