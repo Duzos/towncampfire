@@ -1,0 +1,11 @@
+{
+  "parent": "towncampfire:custom/campfire",
+  "textures": {
+    "all": "towncampfire:block/fire",
+    "particle": "towncampfire:block/fire",
+    "lit_log": "towncampfire:block/loglit",
+    "log": "towncampfire:block/campfire_log",
+    "fire": "towncampfire:block/fire"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "towncampfire:block/red_campfire"
+    },
+    "facing=east": {
+      "model": "towncampfire:block/red_campfire",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "towncampfire:block/red_campfire",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "towncampfire:block/red_campfire",
+      "y": 270
+    }
+  }
+}
